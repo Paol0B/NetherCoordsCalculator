@@ -1,0 +1,38 @@
+﻿<Window x:Name="window" x:Class="NetherCoordsCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetherCoordsCalculator"
+        mc:Ignorable="d"
+        Title="NetherCalculator" Height="369" Width="605" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <Color x:Key="SolidColorBrushColor1">#FFFFCCCC</Color>
+        <Color x:Key="SolidColorBrushColor2">#FFD3FFC0</Color>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://pm1.narvii.com/7604/e3b7d8cfa7db8a67d68ad3cb6dc5b10dc463c228r1-1920-1080v2_hq.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="txtOverWorldX" HorizontalAlignment="Left" Margin="84,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtOverWorldX_TextChanged" Height="32" FontSize="14" FontWeight="Bold">
+            <TextBox.Background>
+                <SolidColorBrush Color="{DynamicResource SolidColorBrushColor2}"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="txtOverWorldY" HorizontalAlignment="Left" Margin="258,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtOverWorldY_TextChanged" Height="32" FontSize="14" FontWeight="Bold" Background="#FFD3FFC0"/>
+        <TextBox x:Name="txtOverWorldZ" HorizontalAlignment="Left" Margin="426,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtOverWorldZ_TextChanged" Height="32" FontSize="14" FontWeight="Bold" Background="#FFD3FFC0"/>
+        <TextBox x:Name="txtNetherX" HorizontalAlignment="Left" Margin="84,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNetherX_TextChanged" Height="32" FontWeight="Bold" FontSize="14" Background="#FFFFCCCC"/>
+        <TextBox x:Name="txtNetherY" HorizontalAlignment="Left" Margin="258,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNetherY_TextChanged" Height="32" FontSize="14" FontWeight="Bold" Background="#FFFFCCCC"/>
+        <TextBox x:Name="txtNetherZ" HorizontalAlignment="Left" Margin="426,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNetherZ_TextChanged" Height="32" FontSize="14" FontWeight="Bold" Background="#FFFFCCCC"/>
+        <Label Content="X:" HorizontalAlignment="Left" Margin="52,175,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Foreground="White"/>
+        <Label Content="Y:" HorizontalAlignment="Left" Margin="227,177,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <Label Content="X:" HorizontalAlignment="Left" Margin="52,259,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Foreground="White"/>
+        <Label Content="Y:" HorizontalAlignment="Left" Margin="227,259,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Z:" HorizontalAlignment="Left" Margin="395,175,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Z:" HorizontalAlignment="Left" Margin="395,259,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Nether" HorizontalAlignment="Center" Margin="0,216,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="White" Width="104" Height="43" FontStyle="Italic" FontFamily="Kristen ITC"/>
+        <Label Content="Overworld" HorizontalAlignment="Center" Margin="0,134,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="White" Width="142" Height="43" FontStyle="Italic" FontFamily="Kristen ITC"/>
+        <Label Content="Nether Calculator Portal" HorizontalAlignment="Left" Margin="65,40,0,0" VerticalAlignment="Top" FontSize="36" Foreground="White" Width="487" Height="65" FontStyle="Italic" FontFamily="Kristen ITC" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
